@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admiral Walker | Cloud and AI Product Builder</title>
+<meta name="description" content="Admiral Walker, Founder and CEO of UnHidden Holdings LLC. Cloud and AI product builder: Scittle, Slyvoryn, PAME.">
+<style>
+:root{--bg:#070b14;--panel:#0e1524;--line:#1c2840;--text:#e8edf7;--muted:#93a1ba;--a:#5eead4;--b:#818cf8;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+.glow{position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(600px 400px at 15% 10%,rgba(94,234,212,.14),transparent 70%),
+ radial-gradient(700px 500px at 85% 20%,rgba(129,140,248,.16),transparent 70%),
+ radial-gradient(600px 400px at 50% 100%,rgba(94,234,212,.08),transparent 70%);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-24px)}}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:rgba(7,11,20,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav strong{letter-spacing:.04em}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px;color:var(--muted)}
+nav ul a:hover{color:var(--a)}
+.hero{padding:96px 0 72px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.mono{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;font-size:44px;font-weight:700;letter-spacing:.04em;background:linear-gradient(135deg,var(--a),var(--b));color:#06101c;box-shadow:0 0 60px rgba(94,234,212,.35),0 0 120px rgba(129,140,248,.25);animation:pulse 5s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 80px rgba(94,234,212,.5),0 0 150px rgba(129,140,248,.35)}}
+.eyebrow{color:var(--a);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.1;margin:8px 0 12px}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:18px;max-width:640px}
+.btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:10px;border:1px solid var(--line);font-weight:600;font-size:15px;transition:.2s}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));color:#06101c;border:0}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(94,234,212,.2)}
+section{padding:64px 0}
+h2{font-size:28px;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:30px;max-width:700px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.stat b{display:block;font-size:30px;color:var(--a)}
+.stat small{color:var(--muted)}
+.parent{background:linear-gradient(135deg,rgba(94,234,212,.08),rgba(129,140,248,.1));border:1px solid var(--line);border-radius:16px;padding:26px;margin-bottom:26px}
+.parent h3{font-size:20px}
+.parent p{color:var(--muted);margin-top:6px}
+.cards{display:grid;gap:22px}
+.card{display:grid;grid-template-columns:1.1fr 1fr;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}
+.card:hover{border-color:var(--a);box-shadow:0 0 40px rgba(94,234,212,.15);transform:translateY(-3px)}
+.card img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;min-height:240px}
+.card .body{padding:26px}
+.tag{font-size:12px;color:var(--a);letter-spacing:.12em;text-transform:uppercase}
+.card h3{font-size:24px;margin:4px 0 8px}
+.card p{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.chips span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:3px 11px;color:var(--text);background:#0a1120}
+.visit{color:var(--a);font-weight:600;font-size:15px}
+.visit:hover{text-decoration:underline}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.cert{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:.2s}
+.cert:hover{border-color:var(--b);box-shadow:0 0 28px rgba(129,140,248,.2)}
+.cert.main{grid-column:1/-1;border-color:var(--b)}
+.cert b{display:block}
+.cert small{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.skills div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.skills h4{color:var(--a);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.skills p{color:var(--muted);font-size:14px}
+.contact{text-align:center}
+.contact a.big{display:inline-block;font-size:22px;margin-top:10px;color:var(--a)}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:13px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:left;padding-top:56px}.card{grid-template-columns:1fr}nav ul{gap:14px}.mono{width:96px;height:96px;font-size:32px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<nav><div class="wrap"><strong>ADMIRAL WALKER</strong>
+<ul><li><a href="#about">About</a></li><li><a href="#ventures">Ventures</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="wrap hero">
+ <div class="mono" aria-hidden="true">AW</div>
+ <div>
+  <div class="eyebrow">Founder &amp; CEO, UnHidden Holdings LLC</div>
+  <h1>I build and run <span>cloud products</span> on AWS.</h1>
+  <p class="lead">Self-taught builder, on AWS since 2018. Three live platforms under one company, designed, deployed and operated end to end.</p>
+  <div class="btns"><a class="btn p" href="#ventures">See the live work</a><a class="btn" href="mailto:admralwalker@gmail.com">Email me</a></div>
+ </div>
+</header>
+
+<main class="wrap">
+<section id="about" class="reveal">
+ <h2>About</h2>
+ <p class="sub">I design, build, deploy and troubleshoot production serverless systems on my own: API Gateway, Lambda, DynamoDB, Step Functions, CloudFront, Cognito and Amazon Bedrock. I use Claude and Claude Code daily to move faster, and I own the architecture and the results.</p>
+ <div class="stats">
+  <div class="stat"><b>2018</b><small>started building on AWS</small></div>
+  <div class="stat"><b>3</b><small>live products with their own domains</small></div>
+  <div class="stat"><b>50+</b><small>Lambda functions shipped</small></div>
+  <div class="stat"><b>7</b><small>Google AI certificates</small></div>
+ </div>
+</section>
+
+<section id="ventures" class="reveal">
+ <h2>Ventures</h2>
+ <p class="sub">Each product below is live. Click through and use it.</p>
+ <div class="parent"><span class="tag">Parent company</span><h3>UnHidden Holdings LLC</h3><p>California holding company that owns and operates Scittle, Slyvoryn and PAME.</p></div>
+ <div class="cards">
+  <article class="card">
+   <img src="assets/scittle.jpg" alt="Scittle home page" loading="lazy">
+   <div class="body"><span class="tag">AWS cost recovery</span><h3>Scittle</h3>
+   <p>Finds idle and wasted cloud capacity, checks that reclaiming it is safe, then recovers it automatically. Commission-based, so customers pay only when money is recovered.</p>
+   <div class="chips"><span>AWS</span><span>Serverless</span><span>Automation</span><span>FinOps</span></div>
+   <a class="visit" href="https://scittleme.com" target="_blank" rel="noopener">Visit scittleme.com &rarr;</a></div>
+  </article>
+  <article class="card">
+   <img src="assets/slyvoryn.jpg" alt="Slyvoryn home page" loading="lazy">
+   <div class="body"><span class="tag">Marketplace</span><h3>Slyvoryn</h3>
+   <p>A supply network connecting verified land, harvesters, botanical resources and commercial buyers, with address geocoding, state-by-state search and an AI assistant.</p>
+   <div class="chips"><span>AWS</span><span>Marketplace</span><span>Geocoding</span><span>AI assistant</span></div>
+   <a class="visit" href="https://slyvoryn.com" target="_blank" rel="noopener">Visit slyvoryn.com &rarr;</a></div>
+  </article>
+  <article class="card">
+   <img src="assets/pame.jpg" alt="PAME home page" loading="lazy">
+   <div class="body"><span class="tag">Two-sided crew marketplace</span><h3>PAME</h3>
+   <p>Production Assistant Market Exchange: crew post shifts, pick up work and trade within their department. Built on Lambda, API Gateway, DynamoDB, SQS, SES and WebSockets, with an AI call sheet scanner on Amazon Bedrock.</p>
+   <div class="chips"><span>Lambda</span><span>DynamoDB</span><span>WebSockets</span><span>Bedrock</span></div>
+   <a class="visit" href="https://use-pame.com" target="_blank" rel="noopener">Visit use-pame.com &rarr;</a></div>
+  </article>
+ </div>
+</section>
+
+<section id="certs" class="reveal">
+ <h2>Certifications</h2>
+ <p class="sub">Google AI certificates through Coursera. Every one links to its verification page.</p>
+ <div class="certs">
+  <a class="cert main" href="https://www.coursera.org/account/accomplishments/specialization/WV9IXI9N4ZML" target="_blank" rel="noopener"><b>Google AI Essentials Specialization</b><small>Google &middot; Completed August 2026 &middot; Verify</small></a>
+  <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/IQD64AOR3HBN" target="_blank" rel="noopener"><b>Introduction to AI</b><small>Google &middot; July 2026</small></a>
+  <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/FK2KGGHB7UOJ" target="_blank" rel="noopener"><b>Maximize Productivity With AI Tools</b><small>Google &middot; August 2026</small></a>
+  <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/YP8YH7KU8Q42" target="_blank" rel="noopener"><b>Discover the Art of Prompting</b><small>Google &middot; August 2026</small></a>
+  <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/AQN2DKB9JCPV" target="_blank" rel="noopener"><b>Use AI Responsibly</b><small>Google &middot; August 2026</small></a>
+  <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/GYH4PRW9UKDD" target="_blank" rel="noopener"><b>Stay Ahead of the AI Curve</b><small>Google &middot; August 2026</small></a>
+  <a class="cert" href="https://www.coursera.org/account/accomplishments/verify/RNBWQUDM6VFC" target="_blank" rel="noopener"><b>AI for Data Analysis</b><small>Google &middot; September 2026</small></a>
+ </div>
+</section>
+
+<section id="skills" class="reveal">
+ <h2>Skills</h2>
+ <p class="sub">Tools I use in production.</p>
+ <div class="skills">
+  <div><h4>AWS</h4><p>Lambda, API Gateway, DynamoDB, S3, CloudFront, Cognito, EventBridge, SQS, SNS, SES, Step Functions, Bedrock, IAM, Route 53, CloudWatch, CloudFormation</p></div>
+  <div><h4>Development</h4><p>Node.js, Python, JavaScript, REST and WebSocket API design, NoSQL schema design, Git and GitHub</p></div>
+  <div><h4>Operations</h4><p>CI/CD-style deployment, Infrastructure as Code, CloudWatch root-cause debugging across distributed systems</p></div>
+  <div><h4>AI</h4><p>Claude and Claude Code, Amazon Bedrock, prompt engineering, LLM workflow automation</p></div>
+ </div>
+</section>
+
+<section id="contact" class="contact reveal">
+ <h2>Contact</h2>
+ <p class="sub" style="margin:0 auto">Open to cloud, DevOps and AI engineering roles. Remote friendly.</p>
+ <a class="big" href="mailto:admralwalker@gmail.com">admralwalker@gmail.com</a>
+</section>
+</main>
+<footer>&copy; 2026 Admiral Walker &middot; UnHidden Holdings LLC</footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
