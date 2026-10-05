@@ -1,19 +1,21 @@
-# Admiral Walker
+# Scittle: Cloud and AI Capacity Recovery
 
-Founder & CEO of UnHidden Holdings LLC. Cloud and AI product builder, on AWS since 2018.
+Live product: https://scittleme.com
 
-Live site: https://admralwalker.github.io
+Scittle finds idle GPU time, overprovisioned nodes, duplicate compute and other wasted cloud capacity, confirms that reclaiming it is safe, and recovers it automatically. It is commission-based, so customers pay only when money is recovered.
 
-## Live products
+## How it works
 
-- Scittle: https://scittleme.com (AWS cost recovery)
-- Slyvoryn: https://slyvoryn.com (land and botanical supply marketplace)
-- PAME: https://use-pame.com (crew marketplace for production)
+1. Detect: continuously maps cloud spend against actual utilization to surface idle capacity, stranded nodes and duplicate workloads.
+2. Verify: every candidate is checked against workload dependencies before anything is touched.
+3. Recover: safe fixes apply on their own. Anything else is routed to the customer's team with the numbers attached.
 
-## Certifications
+## Built with
 
-Google AI Essentials Specialization and six Google AI courses (Coursera, 2026).
+Built on serverless AWS (Lambda, API Gateway, DynamoDB, CloudWatch), with automation for scanning and remediation.
 
-## Contact
+## My role
 
-admralwalker@gmail.com
+Sole designer, builder and operator: architecture, infrastructure, security and deployment.
+
+Part of UnHidden Holdings LLC. Portfolio: https://admralwalker.github.io
