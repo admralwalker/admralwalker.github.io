@@ -1,21 +1,31 @@
-# Scittle: Cloud and AI Capacity Recovery
+# Hi, I'm Admiral Walker
 
-Live product: https://scittleme.com
+Cloud infrastructure and platform engineer. I have been building on AWS since 2018, and I run three live products as Founder and CEO of UnHidden Holdings LLC.
 
-Scittle finds idle GPU time, overprovisioned nodes, duplicate compute and other wasted cloud capacity, confirms that reclaiming it is safe, and recovers it automatically. It is commission-based, so customers pay only when money is recovered.
+Portfolio: https://admralwalker.github.io
+LinkedIn: https://www.linkedin.com/in/admiralwalker
+Email: admralwalker@gmail.com
 
-## How it works
+## Live products
 
-1. Detect: continuously maps cloud spend against actual utilization to surface idle capacity, stranded nodes and duplicate workloads.
-2. Verify: every candidate is checked against workload dependencies before anything is touched.
-3. Recover: safe fixes apply on their own. Anything else is routed to the customer's team with the numbers attached.
+| Product | What it does | Link |
+|---|---|---|
+| Scittle | Finds idle and wasted cloud capacity, checks it is safe to reclaim, and recovers it automatically | https://scittleme.com |
+| Slyvoryn | Marketplace connecting verified land, harvesters, botanical supply and commercial buyers | https://slyvoryn.com |
+| PAME | Two-sided marketplace where production crew post shifts, pick up work and trade | https://use-pame.com |
 
-## Built with
+## What I work with
 
-Built on serverless AWS (Lambda, API Gateway, DynamoDB, CloudWatch), with automation for scanning and remediation.
+AWS: Lambda, API Gateway, DynamoDB, S3, CloudFront, Cognito, EventBridge, SQS, SNS, SES, Step Functions, Amazon Bedrock, IAM, Route 53, CloudWatch, CloudFormation
 
-## My role
+Languages: Node.js, Python, JavaScript
 
-Sole designer, builder and operator: architecture, infrastructure, security and deployment.
+AI: Claude and Claude Code (daily), Amazon Bedrock, prompt engineering, LLM workflow automation
 
-Part of UnHidden Holdings LLC. Portfolio: https://admralwalker.github.io
+## Certifications
+
+Google AI Essentials Specialization (Coursera, 2026) and six Google AI courses, all verifiable on my portfolio.
+
+## Looking for
+
+Cloud, DevOps, platform, FinOps and AI engineering roles. Remote friendly.
