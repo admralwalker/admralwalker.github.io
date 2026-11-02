@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admiral Walker | Technology Founder and IP Owner</title>
+<meta name="description" content="Admiral Walker, Founder of UnHidden Holdings LLC. Technology founder and IP owner: Scittle, PAME and Slyvoryn. Open to licensing, white-label, integration and partnership discussions.">
+<style>
+:root{--bg:#070b14;--panel:#0e1524;--line:#1c2840;--text:#e8edf7;--muted:#93a1ba;--a:#5eead4;--b:#818cf8;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+.glow{position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(600px 400px at 15% 10%,rgba(94,234,212,.14),transparent 70%),
+ radial-gradient(700px 500px at 85% 20%,rgba(129,140,248,.16),transparent 70%),
+ radial-gradient(600px 400px at 50% 100%,rgba(94,234,212,.08),transparent 70%);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-24px)}}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:rgba(7,11,20,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav strong{letter-spacing:.04em}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px;color:var(--muted)}
+nav ul a:hover{color:var(--a)}
+.hero{padding:96px 20px 72px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.mono{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:center top;display:block;font-size:44px;font-weight:700;letter-spacing:.04em;background:linear-gradient(135deg,var(--a),var(--b));color:#06101c;box-shadow:0 0 60px rgba(94,234,212,.35),0 0 120px rgba(129,140,248,.25);animation:pulse 5s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 80px rgba(94,234,212,.5),0 0 150px rgba(129,140,248,.35)}}
+.eyebrow{color:var(--a);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.1;margin:8px 0 12px}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:18px;max-width:640px}
+.btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:10px;border:1px solid var(--line);font-weight:600;font-size:15px;transition:.2s}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));color:#06101c;border:0}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(94,234,212,.2)}
+section{padding:64px 0}
+h2{font-size:28px;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:30px;max-width:700px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.stat b{display:block;font-size:30px;color:var(--a)}
+.stat small{color:var(--muted)}
+.parent{background:linear-gradient(135deg,rgba(94,234,212,.08),rgba(129,140,248,.1));border:1px solid var(--line);border-radius:16px;padding:26px;margin-bottom:26px}
+.parent h3{font-size:20px}
+.parent p{color:var(--muted);margin-top:6px}
+.cards{display:grid;gap:22px}
+.card{display:grid;grid-template-columns:1.1fr 1fr;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}
+.card:hover{border-color:var(--a);box-shadow:0 0 40px rgba(94,234,212,.15);transform:translateY(-3px)}
+.shot{position:relative;min-height:280px;background:#0a1120;overflow:hidden}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.card .body{padding:26px}
+.tag{font-size:12px;color:var(--a);letter-spacing:.12em;text-transform:uppercase}
+.card h3{font-size:24px;margin:4px 0 8px}
+.card p{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.chips span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:3px 11px;color:var(--text);background:#0a1120}
+.visit{color:var(--a);font-weight:600;font-size:15px}
+.visit:hover{text-decoration:underline}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.cert{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:.2s}
+.cert:hover{border-color:var(--b);box-shadow:0 0 28px rgba(129,140,248,.2)}
+.cert.main{grid-column:1/-1;border-color:var(--b)}
+.cert b{display:block}
+.cert small{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.skills div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.skills h4{color:var(--a);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.skills p{color:var(--muted);font-size:14px}
+.contact{text-align:center}
+.contact a.big{display:inline-block;font-size:22px;margin-top:10px;color:var(--a)}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:13px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:left;padding:56px 20px 48px}.card{grid-template-columns:1fr}.shot{min-height:0;aspect-ratio:16/10}nav .wrap{height:auto;flex-direction:column;gap:2px;padding:10px 20px}nav ul{gap:16px;font-size:14px}nav ul{gap:14px}.mono{width:96px;height:96px;font-size:32px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.status{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--a);color:var(--a);border-radius:999px;padding:2px 10px;margin-left:8px;vertical-align:middle}
+.status.soft{border-color:var(--b);color:var(--b)}
+.aud{font-size:13px;color:var(--muted);margin:10px 0 14px}
+.models{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.model{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.model h4{color:var(--a);font-size:15px;margin-bottom:6px}
+.model p{color:var(--muted);font-size:14px}
+.note{color:var(--muted);font-size:13px;margin-top:16px;max-width:760px}
+.inq{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.inq a{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:8px 16px;transition:.2s}
+.inq a:hover{border-color:var(--a);color:var(--a)}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<nav><div class="wrap"><strong>ADMIRAL WALKER</strong>
+<ul><li><a href="#about">About</a></li><li><a href="#ventures">Platforms</a></li><li><a href="#partner">Partnerships</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="wrap hero">
+ <img class="mono" src="assets/Github-headshot.jpg" alt="Admiral Walker" width="132" height="132">
+ <div>
+  <div class="eyebrow">Technology Founder &amp; IP Owner &middot; UnHidden Holdings LLC</div>
+  <h1>I build and commercialize <span>software platforms</span> for operational problems.</h1>
+  <p class="lead">Founder of UnHidden Holdings LLC. Three platforms built end to end: cloud cost recovery, production workforce coordination and a botanical supply network. Open to licensing, white-label, integration and distribution conversations.</p>
+  <div class="btns"><a class="btn p" href="mailto:admralwalker@gmail.com?subject=Technology%20Partnership%20Inquiry">Discuss a Technology Partnership</a><a class="btn" href="#ventures">Review the Platforms</a></div>
+ </div>
+</header>
+
+<main class="wrap">
+<section id="about" class="reveal">
+ <h2>About</h2>
+ <p class="sub">I own and operate the platforms below. I design, build, deploy and run them myself: APIs, databases, authentication, messaging, real-time features and AI automation. They run on AWS today, and the patterns behind them (serverless, event-driven, infrastructure as code) apply on any major cloud. I use AI coding assistants daily to move faster, and I own the architecture and the results.</p>
+ <div class="stats">
+  <div class="stat"><b>2018</b><small>started building production systems</small></div>
+  <div class="stat"><b>3</b><small>platforms built under one company</small></div>
+  <div class="stat"><b>1</b><small>owner and operator of every platform</small></div>
+  <div class="stat"><b>7</b><small>Google AI certificates</small></div>
+ </div>
+</section>
+
+<section id="ventures" class="reveal">
+ <h2>Platforms</h2>
+ <p class="sub">What each platform is for, who it is for, and where it stands today.</p>
+ <div class="parent"><span class="tag">Parent company</span><h3>UnHidden Holdings LLC</h3><p>California company that owns Scittle, PAME and Slyvoryn. I retain ownership of all intellectual property.</p></div>
+ <div class="cards">
+  <article class="card">
+   <div class="shot"><img src="assets/Github-scittle.jpg" alt="Scittle home page" loading="lazy"></div>
+   <div class="body"><span class="tag">Cloud cost recovery</span><span class="status">Live &middot; seeking first customers</span><h3>Scittle</h3>
+   <p>Finds unused cloud and GPU capacity using read-only access. Any change to a customer&rsquo;s environment requires that customer&rsquo;s explicit authorization. Commission-based: 20% of verified savings, so no verified savings means no fee.</p>
+   <p class="aud">For: AI companies, SaaS operators, cloud consultancies and managed service providers.</p>
+   <div class="chips"><span>Cloud cost</span><span>GPU and AI infrastructure</span><span>FinOps</span></div>
+   <a class="visit" href="mailto:admralwalker@gmail.com?subject=Scittle%20Cost-Recovery%20Assessment">Request a Cost-Recovery Assessment &rarr;</a><br>
+   <a class="visit" href="https://scittleme.com" target="_blank" rel="noopener">Visit scittleme.com &rarr;</a></div>
+  </article>
+  <article class="card">
+   <div class="shot"><img src="assets/Github-pame.jpg" alt="PAME home page" loading="lazy"></div>
+   <div class="body"><span class="tag">Production workforce infrastructure</span><span class="status">Live</span><h3>PAME</h3>
+   <p>Production Assistant Market Exchange. Coordinates shift pickup, approved shift trades and availability inside production departments. Designed to complement job boards, union lists and existing production systems, not replace them.</p>
+   <p class="aud">For: production companies, staffing partners, industry organizations and software providers.</p>
+   <div class="chips"><span>Shift pickup</span><span>Shift trades</span><span>Availability</span></div>
+   <a class="visit" href="mailto:admralwalker@gmail.com?subject=PAME%20Partnership%20Inquiry">Discuss a PAME Partnership &rarr;</a><br>
+   <a class="visit" href="https://use-pame.com" target="_blank" rel="noopener">Visit use-pame.com &rarr;</a></div>
+  </article>
+  <article class="card">
+   <div class="shot"><img src="assets/Github-slyvoryn.jpg" alt="Slyvoryn home page" loading="lazy"></div>
+   <div class="body"><span class="tag">Supply chain and procurement</span><span class="status soft">Early stage</span><h3>Slyvoryn</h3>
+   <p>A supply network connecting verified land, harvesters, botanical resources and commercial buyers. Current focus: validating buyer demand and supply before adding features.</p>
+   <p class="aud">For: procurement teams, commercial buyers, suppliers and distribution partners.</p>
+   <div class="chips"><span>Procurement</span><span>Supply network</span><span>Distribution</span></div>
+   <a class="visit" href="mailto:admralwalker@gmail.com?subject=Slyvoryn%20Procurement%20and%20Supplier%20Inquiry">Procurement &amp; Supplier Inquiries &rarr;</a><br>
+   <a class="visit" href="https://slyvoryn.com" target="_blank" rel="noopener">Visit slyvoryn.com &rarr;</a></div>
+  </article>
+ </div>
+</section>
+
+<section id="partner" class="reveal">
+ <h2>Commercialization &amp; Partnership Opportunities</h2>
+ <p class="sub">Ways I am open to working with companies. Each is a conversation to explore, subject to fit.</p>
+ <div class="models">
+  <div class="model"><h4>Licensing</h4><p>Use existing technology under agreed licensing terms.</p></div>
+  <div class="model"><h4>White-label</h4><p>A version of a platform presented under your own brand.</p></div>
+  <div class="model"><h4>Integration</h4><p>Connect existing systems, workflows or capabilities to your technology stack.</p></div>
+  <div class="model"><h4>Technical contracts</h4><p>I solve a cloud, software, automation or architecture problem for you.</p></div>
+  <div class="model"><h4>Revenue sharing</h4><p>Distribute or commercialize a platform in exchange for an agreed share of revenue.</p></div>
+  <div class="model"><h4>Acquisition</h4><p>Selective discussions about acquiring a technology asset or its intellectual property.</p></div>
+ </div>
+ <p class="note">These are pathways I am open to discussing, not standing offers. Every deal is subject to fit and my approval as owner.</p>
+</section>
+
+<section id="contact" class="contact reveal">
+ <h2>Start a Conversation</h2>
+ <p class="sub" style="margin:0 auto">Tell me which platform and what you have in mind. I reply personally.</p>
+ <a class="big" href="mailto:admralwalker@gmail.com">admralwalker@gmail.com</a>
+ <div class="inq">
+  <a href="mailto:admralwalker@gmail.com?subject=Licensing%20or%20White-label%20Inquiry">Licensing / White-label</a>
+  <a href="mailto:admralwalker@gmail.com?subject=Integration%20or%20Technical%20Partnership">Integration / Technical partnership</a>
+  <a href="mailto:admralwalker@gmail.com?subject=Distribution%20or%20Revenue%20Sharing">Distribution / Revenue sharing</a>
+  <a href="mailto:admralwalker@gmail.com?subject=Technology%20Acquisition%20or%20IP%20Discussion">Acquisition / IP</a>
+  <a href="mailto:admralwalker@gmail.com?subject=Technical%20Services%20Engagement">Technical services</a>
+ </div>
+ <p style="margin-top:22px"><a class="visit" href="https://www.linkedin.com/in/admiralwalker" target="_blank" rel="noopener">LinkedIn: linkedin.com/in/admiralwalker &rarr;</a></p>
+</section>
+</main>
+<footer>&copy; 2026 Admiral Walker &middot; UnHidden Holdings LLC</footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
